@@ -1,6 +1,7 @@
 
 const ImageToBase64 = require('./ImageToBase64');
+const GenQR = require('./GenerateQR');
 
 let result = ImageToBase64.encode('./test.jpg');
-console.log(result);
-console.log(ImageToBase64.splitBase64(result));
+let list = ImageToBase64.splitBase64(result);
+GenQR.encode(list, 0);
