@@ -37,6 +37,9 @@ class Clock extends React.Component {
         if(hour > 12) {
             hour = hour-12;
         }
+        if(minutes < 10) {
+            minutes = '0' + minutes;
+        }
 
         return hour + ":" + minutes + ":" + seconds;
     }

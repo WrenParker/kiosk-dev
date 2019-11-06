@@ -2,6 +2,8 @@
 
 .wrapper {
   background-color: #1c1861;
+  background-image: url("./img/background.jpg");
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   text-align: center;
@@ -25,6 +27,8 @@
   grid-row: 1;
   font-style: italic;
   text-align: center;
+  font-size: 16pt;
+  text-shadow: 1px 1px black;
   color: darkgoldenrod;
 }
 
@@ -43,6 +47,7 @@
   text-align: center;
   font-style: italic;
   color: darkgoldenrod;
+  text-shadow: 2px 2px black;
   font-size: 36pt;
 }
 
@@ -61,6 +66,7 @@
    font-style: italic;
    font-size: 24pt;
    color: darkgoldenrod;
+   opacity: 80%;
  }
 
 #Button-B {
@@ -69,6 +75,7 @@
   font-style: italic;
   font-size: 24pt;
   color: darkgoldenrod;
+  opacity: 80%;
 }
 
 #Button-C {
@@ -77,4 +84,5 @@
   font-style: italic;
   font-size: 24pt;
   color: darkgoldenrod;
+  opacity: 80%;
 }
