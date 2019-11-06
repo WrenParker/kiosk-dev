@@ -1,6 +1,6 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import './App.css';
+import './css/App.css';
 import logo from './img/logo.png';
 import Button from '../node_modules/react-bootstrap/Button';
 import Clock from './Components/Clock';

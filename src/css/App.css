@@ -2,7 +2,7 @@
 
 .wrapper {
   background-color: #1c1861;
-  background-image: url("./img/background.jpg");
+  background-image: url("../img/background.jpg");
   background-size: cover;
   width: 100vw;
   height: 100vh;
