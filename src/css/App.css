@@ -1,5 +1,4 @@
 
-
 .wrapper {
   background-color: #1c1861;
   background-image: url("../img/background.jpg");
@@ -8,18 +7,32 @@
   height: 100vh;
   text-align: center;
   display:grid;
-  grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 1fr 2fr;
-  grid-gap: 2em;
-  text-decoration-color: #fff;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-gap: 2em
+}
+
+.Logo-Wrapper {
+  grid-column: 2;
+  grid-row: 1;
+  position: relative;
+}
+
+.Clock-Wrapper {
+  grid-row: 1;
+}
+
+.NavButton-Wrapper {
+  grid-row: 2;
+  grid-column: 2;
 }
 
 .App-Logo {
   grid-column: 2;
-  grid-row: 1;
   display: grid;
-  grid-template-rows: 1fr 4fr 3fr;
+  grid-template-rows: 1fr 4fr 2fr;
   grid-template-columns: 1fr;
+
 
 }
 
@@ -33,9 +46,12 @@
 }
 
 .Logo-Image {
-  grid-row: 2;
+  grid-column: 1;
+  grid-row: 2
+;
   align-content: center;
   object-fit: scale-down;
+  align-content: center;
   width: 100%;
   max-height: 100%;
 
@@ -52,15 +68,14 @@
 }
 
 .Area-Button {
-  grid-column: 2;
-  grid-row: 2;
+  padding: 10px;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr min-content;
   grid-gap: 10px;
   grid-template-rows: repeat(5, 1fr);
 }
 
-#Button-A {
+#map {
    grid-row: 2;
    padding: 5px;
    font-style: italic;
@@ -69,7 +84,7 @@
    opacity: 80%;
  }
 
-#Button-B {
+#weather {
   grid-row: 3;
   padding: 5px;
   font-style: italic;
@@ -78,7 +93,7 @@
   opacity: 80%;
 }
 
-#Button-C {
+#schedule {
   grid-row: 4;
   padding: 5px;
   font-style: italic;
