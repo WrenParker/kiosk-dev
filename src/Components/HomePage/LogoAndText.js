@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Clock from "../Clock";
 import logo from "../../img/logo.png";
+import '../../css/HomePage.css';
 
 class LogoAndText extends React.Component {
     constructor(props) {

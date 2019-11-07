@@ -10,7 +10,7 @@ class ImageToBase64 {
 
     static splitBase64 (base64String) {
          const stringList = [];
-         let size = 2048; //length of 2.5kb
+         let size = 2048; //length of 2kb
          let length = Math.ceil((base64String.length)/size);
          for (let i=0; i<length; i++) {
              console.log(i);

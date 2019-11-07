@@ -2,7 +2,7 @@ import React from "react";
 import LogoAndText from "./LogoAndText";
 import Button from "reactstrap/lib/Button";
 import ReactDOM from "react-dom";
-import '../../css/App.css'
+import '../../css/HomePage.css';
 
 class NavButtons extends React.Component {
     constructor(props) {
