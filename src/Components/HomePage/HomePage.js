@@ -11,8 +11,8 @@ class HomePage extends React.Component {
         
     }
     render () {
-        return <div>
-                    <div className="wrapper">
+        return <div className="wrapper">
+                    <div className="grid-container">
                         <div className="Logo-Wrapper">
                             <LogoAndText/>
                         </div>
