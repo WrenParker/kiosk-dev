@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import NavButtons from "./NavButtons";
 import '../../css/App.css'
+import '../../css/HomePage.css'
 import LogoAndText from "./LogoAndText";
 
 class HomePage extends React.Component {
@@ -10,15 +11,16 @@ class HomePage extends React.Component {
         
     }
     render () {
-        return <div className="wrapper">
-                    <div className="Logo-Wrapper">
-                        <LogoAndText/>
+        return <div>
+                    <div className="wrapper">
+                        <div className="Logo-Wrapper">
+                            <LogoAndText/>
+                        </div>
+                        <div className="NavButton-Wrapper">
+                            <NavButtons/>
+                        </div>
                     </div>
-                    <div className="NavButton-Wrapper">
-                        <NavButtons/>
-                    </div>
-
-               </div>
+                </div>
     }
 }
 

@@ -1,28 +1,23 @@
 
 .wrapper {
-  background-color: #1c1861;
   background-image: url("../img/background.jpg");
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  text-align: center;
   display:grid;
-  grid-template-rows: 1fr 2fr;
   grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 2fr 3fr;
   grid-gap: 2em
 }
 
 .Logo-Wrapper {
+  display:grid;
   grid-column: 2;
-  grid-row: 1;
-  position: relative;
-}
-
-.Clock-Wrapper {
   grid-row: 1;
 }
 
 .NavButton-Wrapper {
+  display:grid;
   grid-row: 2;
   grid-column: 2;
 }

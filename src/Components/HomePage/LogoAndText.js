@@ -7,13 +7,12 @@ import '../../css/HomePage.css';
 class LogoAndText extends React.Component {
     constructor(props) {
         super(props);
-        this.className = props.className;
 
     }
     render () {
         return <div>
-            <div>
-                <div>
+            <div className="App-Logo">
+                <div className="Clock-Wrapper">
                     <Clock/>
                 </div>
                 <img src={logo} alt={"LOGO"} className="Logo-Image"/>
