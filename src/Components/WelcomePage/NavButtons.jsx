@@ -18,11 +18,15 @@ class NavButtons extends React.Component {
     }
     render () {
         return (
+          <Router>
           <div className="Area-Button">
-                    <Button to="/HomePage" id="start" color="primary">
-                      Start
+              <Link to="/HomePage" className="start">
+                    <Button to="/HomePage" id="start-button" color="primary">
+                        Start!
                     </Button>
+              </Link>
           </div>
+        </ Router>
     )}
 }
 

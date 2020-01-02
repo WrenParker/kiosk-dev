@@ -1,9 +1,18 @@
 
-#start {
+.start {
   grid-row: 3;
-  padding: 5px;
+  opacity: 80%;
+  text-decoration: none;
+  color: white;
+
+
+}
+
+ #start-button {
+  height: 100%;
+  width: 100%;
+  color: darkgoldenrod;
   font-style: italic;
   font-size: 24pt;
-  color: darkgoldenrod;
   opacity: 80%;
-}
+ }
