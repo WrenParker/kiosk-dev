@@ -3,22 +3,47 @@ import React from 'react';
 import './css/App.css';
 import WelcomePage from "./Components/WelcomePage/WelcomePage";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+import HomePage from "./Components/HomePage/HomePage";
 
 
 
 function App() {
   return (
   <Router>
+  <div>
     <div>
-        <WelcomePage />
+      <Switch>
+        <Route exact path="/">
+          <Welcome />
+        </Route>
+        <Route path='/HomePage'>
+          <Home />
+        </Route>
+      </Switch>
     </div>
+  </div>
   </Router>
   );
 }
 
+function Home() {
+  return(
+    <div>
+      <HomePage />
+    </div>
+  )
+}
+
+function Welcome() {
+  return(
+    <div>
+      <WelcomePage />
+    </div>
+  )
+}
 export default App;
