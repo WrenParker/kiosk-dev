@@ -1,7 +1,7 @@
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import './css/App.css';
-import HomePage from "./Components/HomePage/HomePage";
+import '../css/App.css';
+import HomePage from "../Components/HomePage/HomePage";
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,7 +15,7 @@ function App() {
   return (
   <Router>
     <div>
-        <WelcomePage />
+        <HomePage/>
     </div>
   </Router>
   );
