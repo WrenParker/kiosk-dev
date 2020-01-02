@@ -1,0 +1,9 @@
+
+#start {
+  grid-row: 3;
+  padding: 5px;
+  font-style: italic;
+  font-size: 24pt;
+  color: darkgoldenrod;
+  opacity: 80%;
+}

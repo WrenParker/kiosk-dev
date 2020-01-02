@@ -11,12 +11,20 @@ import {
 
 
 
-function App() {
+function HomePage() {
   return (
   <Router>
     <div>
         <HomePage/>
     </div>
+    <Switch>
+      <Route exact path="/">
+        <WelcomePage />
+      </Route>
+      <Route path="/HomePage">
+        <HomePage />
+      </Route>
+    </Switch>
   </Router>
   );
 }

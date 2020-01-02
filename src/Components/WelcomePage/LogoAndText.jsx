@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Clock from "../Clock";
 import logo from "../../img/logo.png";
-import '../../css/HomePage.css';
+import '../../css/App.css';
 
 class LogoAndText extends React.Component {
     constructor(props) {
@@ -28,5 +28,13 @@ ReactDOM.render(
     <LogoAndText/>,
     document.getElementById('root')
 );
+
+function HomePage() {
+  return(
+    <div>
+      <HomePage />
+    </div>
+  )
+}
 
 export default LogoAndText;

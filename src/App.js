@@ -1,7 +1,7 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import './css/App.css';
-import HomePage from "./Components/HomePage/HomePage";
+import WelcomePage from "./Components/WelcomePage/WelcomePage";
 import {
   BrowserRouter as Router,
   Switch,
