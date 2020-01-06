@@ -24,6 +24,9 @@ function App() {
         <Route path='/HomePage'>
           <Home />
         </Route>
+        <Route path='/WelcomePage'>
+          <Welcome />
+        </Route>
       </Switch>
     </div>
   </div>

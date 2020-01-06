@@ -10,6 +10,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import backArrow from "../../img/backArrow.png";
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -21,6 +22,13 @@ class HomePage extends React.Component {
           <Router>
             <div className="wrapper">
                       <div className="grid-container">
+                        <div className="Back-Button-Wrapper">
+                          <div className="Back-Button">
+                            <Link to="/WelcomePage">
+                              <img src={backArrow} className="Arrow-Image" />
+                            </Link>
+                          </div>
+                        </div>
                           <div className="Logo-Wrapper">
                               <LogoAndText/>
                           </div>

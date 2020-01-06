@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom'
 import Clock from "../Clock";
 import logo from "../../img/logo.png";
 import '../../css/HomePage.css';
+import {
+  HashRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 class LogoAndText extends React.Component {
     constructor(props) {
@@ -10,7 +16,8 @@ class LogoAndText extends React.Component {
 
     }
     render () {
-        return <div>
+        return (
+          <Router>
             <div className="App-Logo">
                 <div className="Clock-Wrapper">
                     <Clock/>
@@ -20,7 +27,8 @@ class LogoAndText extends React.Component {
                 </div>
                 <p className="Logo-Text">Adventures at WVU</p>
             </div>
-        </div>
+        </Router>
+      )
     }
 }
 
