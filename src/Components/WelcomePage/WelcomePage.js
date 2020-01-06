@@ -19,16 +19,18 @@ class WelcomePage extends React.Component {
     render () {
         return(
         <HashRouter>
-          <div className="wrapper">
-                      <div className="grid-container">
-                          <div className="Logo-Wrapper">
-                              <LogoAndText/>
-                          </div>
-                          <div className="NavButton-Wrapper">
-                              <NavButtons/>
-                          </div>
-                      </div>
-                  </div>
+          <div>
+            <div className="wrapper">
+                        <div className="grid-container">
+                            <div className="Logo-Wrapper">
+                                <LogoAndText/>
+                            </div>
+                            <div className="NavButton-Wrapper">
+                                <NavButtons/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </HashRouter>
     )}
 }

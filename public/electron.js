@@ -12,7 +12,7 @@ let mainWindow;
 function createWindow() {
     mainWindow = new BrowserWindow({
         fullscreen: false,
-        frame: true,
+        frame: false,
         webPreferences: {
             nodeIntegration: true
         }} );
