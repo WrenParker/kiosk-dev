@@ -22,7 +22,7 @@ class NavButtons extends React.Component {
           <div className="Area-Button">
               <Link to="/HomePage" className="start">
                     <Button to="/HomePage" id="start-button" color="primary">
-                        Start!
+                        Start
                     </Button>
               </Link>
           </div>

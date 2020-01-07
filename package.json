@@ -1,11 +1,12 @@
 {
-  "name": "kiost-dev",
+  "name": "kiosk-dev",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "base-64": "^0.1.0",
     "bootstrap": "^4.3.1",
     "electron-is-dev": "^1.1.0",
+    "electron-packager": "^14.1.1",
     "node": "latest",
     "qrcode": "^1.4.2",
     "react": "^16.11.0",
@@ -44,7 +45,7 @@
     "@rescripts/rescript-env": "^0.0.11",
     "concurrently": "^5.0.0",
     "cross-env": "^6.0.3",
-    "electron": "^7.0.0",
+    "electron": "^7.1.7",
     "electron-builder": "^22.1.0",
     "wait-on": "^3.3.0"
   }

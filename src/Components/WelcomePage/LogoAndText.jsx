@@ -18,7 +18,7 @@ class LogoAndText extends React.Component {
                 <div className="Image-Wrapper">
                     <img src={logo} alt={"LOGO"} className="Logo-Image"/>
                 </div>
-                <p className="Logo-Text">Adventures at WVU</p>
+                <p className="Logo-Text">Adventures on the Gorge</p>
             </div>
         </div>
     }
