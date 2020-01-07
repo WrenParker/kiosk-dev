@@ -7,6 +7,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
 import HomePage from "./pages/HomePage";
 import WelcomePage from "./pages/WelcomePage";
 import MapPage from "./pages/MapPage";

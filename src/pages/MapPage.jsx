@@ -8,6 +8,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import map from '../img/map.jpg'
 
 import LogoAndText from "../Components/Common/LogoAndText";
 import NavButtons from "../Components/WelcomePage/NavButtons"
@@ -31,6 +32,9 @@ class MapPage extends React.Component {
                       </div>
                         <div className="Logo-Wrapper">
                             <LogoAndText/>
+                        </div>
+                        <div className="Map-Wrapper">
+                          <img className="Map-Image" src={map} />
                         </div>
                     </div>
                 </div>
