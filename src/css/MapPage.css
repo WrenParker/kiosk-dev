@@ -1,6 +1,7 @@
 
 .Map-Wrapper {
-  grid-column: 2;
+  grid-column: 1;
+  grid-row: 2;
   display: grid;
   grid-template-rows: 1fr 5fr 1fr;
   grid-template-columns: 1fr 5fr 1fr;
@@ -15,11 +16,13 @@
 .QR-Link {
   grid-row: 1;
   grid-column: 1;
+  opacity: 80%;
 }
 
 .QR-Download {
   grid-row: 1;
   grid-column: 3;
+  opacity: 80%;
 }
 
 .Download-Buttons-Wrapper {

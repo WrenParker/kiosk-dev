@@ -23,7 +23,7 @@ class WelcomePage extends React.Component {
             <div className="wrapper">
                         <div className="grid-container">
                             <div className="Logo-Wrapper">
-                                <LogoAndText/>
+                                <LogoAndText />
                             </div>
                             <div className="NavButton-Wrapper">
                                 <NavButtons/>

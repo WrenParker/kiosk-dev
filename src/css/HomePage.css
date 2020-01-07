@@ -1,6 +1,7 @@
 
 .map {
   grid-row: 2;
+  grid-column: 2;
   opacity: 80%;
   text-decoration: none;
   color: white;
@@ -8,6 +9,7 @@
 
 .weather {
   grid-row: 3;
+  grid-column: 2;
   opacity: 80%;
   text-decoration: none;
   color: white;
@@ -15,6 +17,7 @@
 
 .schedule {
   grid-row: 4;
+  grid-column: 2;
   opacity: 80%;
   text-decoration: none;
   color: white;
