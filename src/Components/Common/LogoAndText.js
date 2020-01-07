@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Clock from "../Clock";
+import Clock from "./Clock";
 import logo from "../../img/logo.png";
 import '../../css/App.css';
 
