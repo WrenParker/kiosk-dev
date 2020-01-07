@@ -11,7 +11,7 @@ import {
 import LogoAndText from "../Components/Common/LogoAndText";
 import NavButtons from "../Components/WelcomePage/NavButtons"
 import backArrow from "../img/backArrow.png";
-class MapPage extends React.Component {
+class SchedulePage extends React.Component {
     constructor(props) {
         super(props);
 
@@ -38,8 +38,8 @@ class MapPage extends React.Component {
 }
 
 ReactDOM.render(
-    <MapPage/>,
+    <SchedulePage/>,
     document.getElementById('root')
 );
 
-export default MapPage;
+export default SchedulePage;

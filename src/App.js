@@ -10,6 +10,8 @@ import {
 import HomePage from "./pages/HomePage";
 import WelcomePage from "./pages/WelcomePage";
 import MapPage from "./pages/MapPage";
+import WeatherPage from "./pages/WeatherPage";
+import SchedulePage from "./pages/SchedulePage";
 
 
 
@@ -30,6 +32,12 @@ function App() {
         </Route>
         <Route path='/MapPage'>
           <Map />
+        </Route>
+        <Route path='/WeatherPage'>
+          <Weather />
+        </Route>
+        <Route path='/SchedulePage'>
+          <Schedule />
         </Route>
       </Switch>
     </div>
@@ -58,6 +66,22 @@ function Map() {
   return (
     <div>
       <MapPage />
+    </div>
+  )
+}
+
+function Weather() {
+  return (
+    <div>
+      <WeatherPage />
+    </div>
+  )
+}
+
+function Schedule() {
+  return (
+    <div>
+      <SchedulePage />
     </div>
   )
 }

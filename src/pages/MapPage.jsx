@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import '../css/App.css'
+import '../css/MapPage.css'
 import {
   HashRouter as Router,
   Switch,
