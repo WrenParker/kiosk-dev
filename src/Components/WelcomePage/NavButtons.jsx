@@ -1,5 +1,5 @@
 import React from "react";
-import LogoAndText from "./LogoAndText";
+import LogoAndText from "../Common/LogoAndText";
 import Button from "reactstrap/lib/Button";
 import ReactDOM from "react-dom";
 import '../../css/WelcomePage.css';
@@ -9,7 +9,6 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import HomePage from "../../pages/HomePage";
 
 class NavButtons extends React.Component {
     constructor(props) {

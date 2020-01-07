@@ -1,14 +1,14 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import './css/App.css';
-import WelcomePage from "./Components/WelcomePage/WelcomePage";
+import WelcomePage from "./pages/WelcomePage";
 import {
   HashRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
-import HomePage from "./Components/HomePage/HomePage";
+import HomePage from "./pages/HomePage";
 
 
 

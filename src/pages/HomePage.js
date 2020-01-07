@@ -1,59 +1,50 @@
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
-import '../css/App.css';
-import HomePage from "../Components/HomePage/HomePage";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import NavButtons from "../Components/HomePage/NavButtons";
+import '../css/App.css'
+import '../css/HomePage.css'
+import LogoAndText from "../Components/Common/LogoAndText";
 import {
   HashRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+import backArrow from "../img/backArrow.png";
 
+class HomePage extends React.Component {
+    constructor(props) {
+        super(props);
 
-
-
-function Home() {
-  return (
-    <div>
-      <Router>
-        <Switch>
-          <Route to="/Map">
-            <Map />
-          </Route>
-          <Route to="/Weather">
-            <Weather />
-          </Route>
-          <Route to="/Schedule">
-            <Schedule />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
-  );
+    }
+    render () {
+        return (
+          <Router>
+            <div className="wrapper">
+                      <div className="grid-container">
+                        <div className="Back-Button-Wrapper">
+                          <div className="Back-Button">
+                            <Link to="/WelcomePage">
+                              <img src={backArrow} className="Arrow-Image" />
+                            </Link>
+                          </div>
+                        </div>
+                          <div className="Logo-Wrapper">
+                              <LogoAndText/>
+                          </div>
+                          <div className="NavButton-Wrapper">
+                              <NavButtons/>
+                          </div>
+                      </div>
+                  </div>
+          </Router>
+              )
+    }
 }
 
-function Map() {
-  return(
-    <div>
-      {/*<MapPage />*/}
-    </div>
-  )
-}
+ReactDOM.render(
+    <HomePage/>,
+    document.getElementById('root')
+);
 
-function Schedule() {
-  return(
-    <div>
-      {/*<SchedulePage />*/}
-    </div>
-  )
-}
-
-function Weather() {
-  return(
-    <div>
-      {/*<WeatherPage />*/}
-    </div>
-  )
-}
-
-export default Home;
+export default HomePage;

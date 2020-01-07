@@ -10,7 +10,7 @@ class LogoAndText extends React.Component {
 
     }
     render () {
-        return <div>
+        return (
             <div className="App-Logo">
                 <div className="Clock-Wrapper">
                     <Clock/>
@@ -20,7 +20,7 @@ class LogoAndText extends React.Component {
                 </div>
                 <p className="Logo-Text">Adventures on the Gorge</p>
             </div>
-        </div>
+      )
     }
 }
 
@@ -28,13 +28,5 @@ ReactDOM.render(
     <LogoAndText/>,
     document.getElementById('root')
 );
-
-function HomePage() {
-  return(
-    <div>
-      <HomePage />
-    </div>
-  )
-}
 
 export default LogoAndText;
