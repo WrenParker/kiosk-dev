@@ -11,3 +11,20 @@
   grid-column: 2;
   height: 35vh;
 }
+
+.QR-Link {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.QR-Download {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.Download-Buttons-Wrapper {
+  grid-column: 2;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 2fr;
+}

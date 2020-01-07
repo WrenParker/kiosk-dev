@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import '../css/App.css'
 import '../css/MapPage.css'
+import Button from "reactstrap/lib/Button";
 import {
   HashRouter as Router,
   Switch,
@@ -30,12 +31,25 @@ class MapPage extends React.Component {
                           </Link>
                         </div>
                       </div>
-                        <div className="Logo-Wrapper">
+                      <div className="Logo-Wrapper">
                             <LogoAndText/>
-                        </div>
-                        <div className="Map-Wrapper">
+                      </div>
+                      <div className="Map-Wrapper">
                           <img className="Map-Image" src={map} />
-                        </div>
+                          <div className="Download-Buttons-Wrapper">
+                            <div className="QR-Link">
+                                <Link to="/QR-Link">
+                                  <Button>Download via QR-Link <br /> (Internet)</Button>
+                                </Link>
+                            </div>
+                            <div className="QR-Download">
+                                <Link to="/QR-Download">
+                                  <Button>Download via QR-Download <br /> (No Internet)</Button>
+                                </Link>
+                            </div>
+                          </div>
+                      </div>
+
                     </div>
                 </div>
         </Router>
