@@ -1,7 +1,6 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import './css/App.css';
-import WelcomePage from "./pages/WelcomePage";
 import {
   HashRouter as Router,
   Switch,
@@ -9,6 +8,8 @@ import {
   Link
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import WelcomePage from "./pages/WelcomePage";
+import MapPage from "./pages/MapPage";
 
 
 
@@ -26,6 +27,9 @@ function App() {
         </Route>
         <Route path='/WelcomePage'>
           <Welcome />
+        </Route>
+        <Route path='/MapPage'>
+          <Map />
         </Route>
       </Switch>
     </div>
@@ -46,6 +50,14 @@ function Welcome() {
   return(
     <div>
       <WelcomePage />
+    </div>
+  )
+}
+
+function Map() {
+  return (
+    <div>
+      <MapPage />
     </div>
   )
 }

@@ -11,7 +11,7 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 2fr 3fr;
+  grid-template-rows: 3fr 4fr;
   grid-gap: 1em;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .Logo-Image {
-
+    grid-row: 2;
     padding: 1em;
     object-fit: cover;
 
@@ -88,4 +88,9 @@
     font-size: 18pt;
     text-shadow: 1px 1px black;
     color: darkgoldenrod;
+}
+
+.Image-Wrapper {
+  display: grid;
+  grid-template-rows: 3fr 5fr;
 }

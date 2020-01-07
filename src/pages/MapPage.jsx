@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import '../css/App.css'
 import {
-  HashRouter as Router,
+  HashRouter,
   Switch,
   Route,
   Link
@@ -11,14 +11,14 @@ import LogoAndText from "../Components/Common/LogoAndText";
 import NavButtons from "../Components/WelcomePage/NavButtons"
 
 
-class WelcomePage extends React.Component {
+class MapPage extends React.Component {
     constructor(props) {
         super(props);
 
     }
     render () {
         return(
-        <Router>
+        <HashRouter>
           <div>
             <div className="wrapper">
                         <div className="grid-container">
@@ -31,13 +31,13 @@ class WelcomePage extends React.Component {
                         </div>
                     </div>
                 </div>
-        </Router>
+        </HashRouter>
     )}
 }
 
 ReactDOM.render(
-    <WelcomePage/>,
+    <MapPage/>,
     document.getElementById('root')
 );
 
-export default WelcomePage;
+export default MapPage;
