@@ -5,20 +5,13 @@ import '../css/MapPage.css'
 import Button from "reactstrap/lib/Button";
 import {
   HashRouter as Router,
-  Switch,
-  Route,
   Link
 } from "react-router-dom";
 import map from '../img/map.jpg'
 
 import LogoAndText from "../Components/Common/LogoAndText";
-import NavButtons from "../Components/WelcomePage/NavButtons"
 import backArrow from "../img/backArrow.png";
 class MapPage extends React.Component {
-    constructor(props) {
-        super(props);
-
-    }
     render () {
         return(
         <Router>
@@ -27,7 +20,7 @@ class MapPage extends React.Component {
                       <div className="Back-Button-Wrapper">
                         <div className="Back-Button">
                           <Link to="/WelcomePage">
-                            <img src={backArrow} className="Arrow-Image" />
+                            <img src={backArrow} className="Arrow-Image" alt="Back"/>
                           </Link>
                         </div>
                       </div>
@@ -36,7 +29,7 @@ class MapPage extends React.Component {
                       </div>
                       <div className="Map-Wrapper">
                         <div className="Map-Image-Wrapper">
-                          <img className="Map-Image" src={map} />
+                          <img className="Map-Image" src={map} alt="MAP"/>
                         </div>
                           <div className="Download-Buttons-Wrapper">
                             <div className="QR-Link">

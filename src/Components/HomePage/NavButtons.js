@@ -1,20 +1,13 @@
 import React from "react";
-import LogoAndText from "../Common/LogoAndText";
 import Button from "reactstrap/lib/Button";
 import ReactDOM from "react-dom";
 import '../../css/HomePage.css';
 import {
   HashRouter as Router,
-  Switch,
-  Route,
   Link
 } from "react-router-dom";
 
 class NavButtons extends React.Component {
-    constructor(props) {
-        super(props);
-
-    }
     render () {
         return (
         <Router>

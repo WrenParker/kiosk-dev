@@ -3,19 +3,12 @@ import ReactDOM from 'react-dom'
 import '../css/App.css'
 import {
   HashRouter as Router,
-  Switch,
-  Route,
-  Link
 } from "react-router-dom";
 import LogoAndText from "../Components/Common/LogoAndText";
 import NavButtons from "../Components/WelcomePage/NavButtons"
 
 
 class WelcomePage extends React.Component {
-    constructor(props) {
-        super(props);
-
-    }
     render () {
         return(
         <Router>

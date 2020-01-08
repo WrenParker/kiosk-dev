@@ -4,8 +4,7 @@ import './css/App.css';
 import {
   HashRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";

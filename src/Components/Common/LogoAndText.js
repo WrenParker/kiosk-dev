@@ -6,10 +6,6 @@ import '../../css/App.css';
 import watermark from "../../img/HitLabWM.png"
 
 class LogoAndText extends React.Component {
-    constructor(props) {
-        super(props);
-
-    }
     render () {
         return (
             <div className="App-Logo">
@@ -17,10 +13,10 @@ class LogoAndText extends React.Component {
                     <Clock/>
                 </div>
                 <div className="Watermark-Wrapper">
-                  <img src={watermark} className="Watermark-Image" />
+                  <img src={watermark} className="Watermark-Image" alt="WaterMark"/>
                 </div>
                 <div className="Image-Wrapper">
-                    <img src={logo} alt={"LOGO"} className="Logo-Image"/>
+                    <img src={logo} alt={"LOGO"} className="Logo-Image" alt="AOTG"/>
                 </div>
             </div>
       )

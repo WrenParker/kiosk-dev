@@ -10,10 +10,10 @@
     "node": "latest",
     "qrcode": "^1.4.2",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-router": "^4.3.1",
+    "react-dom": "latest",
+    "react-router": "latest",
     "react-router-bootstrap": "^0.25.0",
-    "react-router-dom": "^4.3.1",
+    "react-router-dom": "latest",
     "react-scripts": "3.2.0",
     "reactstrap": "^8.1.1"
   },
