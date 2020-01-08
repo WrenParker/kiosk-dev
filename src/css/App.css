@@ -15,7 +15,7 @@
   height: 100vh;
   width: 100vw;
   grid-template-columns: 1fr;
-  grid-template-rows: 3fr 4fr;
+  grid-template-rows: 2fr 5fr;
   grid-gap: 1em;
 }
 
@@ -67,14 +67,13 @@
 .Back-Button {
   grid-row: 1;
   grid-column: 1;
-  width: 20vw;
 }
 
 .Arrow-Image {
   object-fit: scale-down;
   left: 0;
   padding: .25em;
-  height: 3vh;
+  height: 4vh;
 }
 
 .App-Logo {
@@ -113,5 +112,5 @@
 
 .Watermark-Image {
   height: auto;
-  width: 15vw;
+  width: 17vw;
 }
