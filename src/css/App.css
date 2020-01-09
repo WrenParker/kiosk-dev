@@ -15,7 +15,7 @@
   height: 100vh;
   width: 100vw;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 5fr;
+  grid-template-rows: 2fr 7fr;
   grid-gap: 1em;
 }
 

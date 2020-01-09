@@ -3,6 +3,7 @@ import LogoAndText from "../Common/LogoAndText";
 import Button from "reactstrap/lib/Button";
 import ReactDOM from "react-dom";
 import '../../css/HomePage.css';
+import '../../css/WeatherPage.css';
 import {
   HashRouter as Router,
   Switch,
@@ -12,7 +13,7 @@ import {
 import * as apiKeys from "../apiKeys.json"
 
 
-class WeatherPage extends React.Component {
+class WeatherInfo extends React.Component {
     _isMounted = false;
     constructor(props, weatherKey, weatherData) {
         super(props);
@@ -29,7 +30,7 @@ class WeatherPage extends React.Component {
     componentDidMount() {
       this._isMounted = true;
       this.timerID = setInterval(
-          () => this.tick(), 10000
+          () => this.tick(), 600000
       );
       this.getWeatherData();
     }
@@ -49,7 +50,7 @@ class WeatherPage extends React.Component {
 
     getWeatherData() {
       const weatherURL =
-      `https://api.openweathermap.org/data/2.5/weather?zip=94040,us&units=imperial&appid=${this.weatherKey}`;
+      `https://api.openweathermap.org/data/2.5/weather?zip=25837,us&units=imperial&appid=${this.weatherKey}`;
 
       fetch(weatherURL)
       .then(res=>res.json())
@@ -68,17 +69,29 @@ class WeatherPage extends React.Component {
       let currentTemperature = 0;
       if(this.state.isLoaded) {
         currentTemperature = Math.round(this.state.weatherData.main.temp);
+        console.log(this.state.weatherData);
       }
       return currentTemperature;
+    }
+
+    currentDescription() {
+      let currentDescription = 0;
+      if(this.state.isLoaded) {
+        currentDescription = this.state.weatherData.weather[0].description;
+      }
+      return currentDescription;
     }
 
     render () {
         const {hasLoaded, weatherData} = this.state;
          if(hasLoaded) { return (
           <div className="Weather-Info-Wrapper">
-            <div className="Outside-Temperature">
-              <div className="Outside-Temperature-Text">
+            <div className="Outside-Basic-Wrapper">
+              <div className="Outside-Basic-Temperature">
                 {this.currentTemperature() + "°" }
+              </div>
+              <div className="Outside-Basic-Description">
+                {this.currentDescription()}
               </div>
             </div>
           </div>
@@ -93,8 +106,8 @@ class WeatherPage extends React.Component {
 }
 
 ReactDOM.render(
-    <WeatherPage/>,
+    <WeatherInfo/>,
     document.getElementById('root')
 );
 
-export default WeatherPage;
+export default WeatherInfo;
