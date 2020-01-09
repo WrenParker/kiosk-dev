@@ -9,10 +9,6 @@ import {
 import LogoAndText from "../Components/Common/LogoAndText";
 import backArrow from "../img/backArrow.png";
 class SchedulePage extends React.Component {
-    constructor(props) {
-        super(props);
-
-    }
     render () {
         return(
         <Router>

@@ -1,5 +1,21 @@
 
 .Weather-Wrapper {
   grid-row: 2;
-  background-color: blue;
+}
+
+.Weather-Info-Wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.Outside-Temperature {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.Outside-Temperature-Text {
+    font-style: italic;
+    color: darkgoldenrod;
+    font-size: 10vh;
 }
