@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from "react-dom";
 import * as apiKeys from "../apiKeys.json"
+import Iframe from 'react-iframe';
 
 class Schedule extends React.Component {
 
@@ -19,7 +20,7 @@ class Schedule extends React.Component {
   componentDidMount() {
     this._isMounted = true;
     this.timerID = setInterval(
-        () => this.tick(), 20000
+        () => this.tick(), 2000
     );
   }
 
@@ -50,13 +51,14 @@ class Schedule extends React.Component {
   render () {
     return (
       <div>
+        <Iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23616161&amp;ctz=America%2FNew_York&amp;src=d2xwMDAwM0BtaXgud3Z1LmVkdQ&amp;color=%2322AA99&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK" style={{border:"solid 1px #777"}} width="100%" height="100%" frameborder="0" scrolling="no"></Iframe>
       </div>
     )
   }
 }
 
 ReactDOM.render(
-    <Schedule />,
+    <Schedule src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=d2xwMDAwM0BtaXgud3Z1LmVkdQ&amp;color=%2322AA99&amp;showNav=0&amp;showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;mode=WEEK&amp;showCalendars=0&amp;showDate=0" style={{"borderWidth": "0"}} width="800" height="600" frameBorder="0" scrolling="no"/>,
     document.getElementById('root')
 );
 
