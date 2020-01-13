@@ -16,7 +16,7 @@ class LogoAndText extends React.Component {
                   <img src={watermark} className="Watermark-Image" alt="WaterMark"/>
                 </div>
                 <div className="Image-Wrapper">
-                    <img src={logo} alt={"LOGO"} className="Logo-Image" alt="AOTG"/>
+                    <img src={logo} alt={"LOGO"} className="Logo-Image"/>
                 </div>
             </div>
       )

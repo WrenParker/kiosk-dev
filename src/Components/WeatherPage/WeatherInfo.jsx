@@ -1,6 +1,4 @@
 import React from "react";
-import LogoAndText from "../Common/LogoAndText";
-import Button from "reactstrap/lib/Button";
 import ReactDOM from "react-dom";
 import '../../css/HomePage.css';
 import '../../css/WeatherPage.css';
