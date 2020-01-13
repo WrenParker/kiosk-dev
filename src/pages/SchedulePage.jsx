@@ -5,6 +5,7 @@ import {
   HashRouter as Router,
   Link
 } from "react-router-dom";
+import Schedule from "../Components/SchedulePage/Schedule"
 
 import LogoAndText from "../Components/Common/LogoAndText";
 import backArrow from "../img/backArrow.png";
@@ -23,6 +24,9 @@ class SchedulePage extends React.Component {
                       </div>
                         <div className="Logo-Wrapper">
                             <LogoAndText/>
+                        </div>
+                        <div>
+                          <Schedule />
                         </div>
                     </div>
                 </div>
