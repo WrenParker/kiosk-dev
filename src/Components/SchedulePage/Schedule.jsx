@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from "react-dom";
-import Iframe from 'react-iframe';
 import '../../css/Schedule.css';
 
 class Schedule extends React.Component {
