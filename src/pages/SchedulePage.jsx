@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import '../css/App.css'
+import '../css/Schedule.css'
 import {
   HashRouter as Router,
   Link
@@ -9,6 +10,9 @@ import Schedule from "../Components/SchedulePage/Schedule"
 
 import LogoAndText from "../Components/Common/LogoAndText";
 import backArrow from "../img/backArrow.png";
+
+
+
 class SchedulePage extends React.Component {
     render () {
         return(
@@ -25,7 +29,7 @@ class SchedulePage extends React.Component {
                         <div className="Logo-Wrapper">
                             <LogoAndText/>
                         </div>
-                        <div>
+                        <div className="Calendar-Wrapper">
                           <Schedule />
                         </div>
                     </div>
