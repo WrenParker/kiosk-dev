@@ -45,6 +45,7 @@ class WeatherInfo extends React.Component {
             weatherData: this.getWeatherData(),
             waterData: this.getWaterData(),
         });
+        console.log(this.weatherData);
     }
 
     componentWillUnmount() {
@@ -90,8 +91,6 @@ class WeatherInfo extends React.Component {
       let currentTemperature = 0;
       if(this.state.weatherIsLoaded) {
         currentTemperature = Math.round(this.state.weatherData.main.temp);
-        console.log(this.state.weatherData);
-        console.log(this.state.waterData.value.timeSeries[0].values[0].value[0].value);
       }
       return currentTemperature;
     }
@@ -120,6 +119,14 @@ class WeatherInfo extends React.Component {
       return currentWindSpeed;
     }
 
+    currentHumidity() {
+      let currentHumidity = 0;
+      if(this.state.weatherIsLoaded) {
+        currentHumidity = Math.round(this.state.weatherData.main.humidity);
+      }
+      return currentHumidity;
+    }
+
     currentWaterTemperature() {
       let currentWaterTemperature = 0;
       if(this.state.waterIsLoaded) {
@@ -133,22 +140,25 @@ class WeatherInfo extends React.Component {
          if(weatherHasLoaded && waterHasLoaded) { return (
           <div className="Weather-Info-Wrapper">
             <div className="Outside-Basic-Wrapper">
-              <div className="Outside-Basic-Temperature">
+              <div className="Outside-Basic-Large">
                 {this.currentTemperature() + "°"}
               </div>
-              <div className="Outside-Basic-Feels-Like">
+              <div className="Outside-Basic-Small">
                 {"Feels Like " + this.currentFeelsLike() + "°"}
               </div>
-              <div className="Outside-Basic-Description">
+              <div className="Outside-Basic-Small">
                 {this.currentDescription()}
               </div>
             </div>
             <div className="Outside-Advanced-Wrapper">
-              <div className="Outside-Wind-Speed">
+              <div className="Outside-Advanced-Item">
                 {"Wind Speed: " + this.currentWindSpeed() + "mph"}
               </div>
-              <div className="Outside-Water-Temperature">
+              <div className="Outside-Advanced-Item">
                 {"Water Temperature: " + this.currentWaterTemperature() + "°"}
+              </div>
+              <div className="Outside-Advanced-Item">
+                {"Humidity: " + this.currentHumidity() + "%"}
               </div>
             </div>
           </div>
