@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "reactstrap/lib/Button";
+import { Button } from 'react-bootstrap';
 import ReactDOM from "react-dom";
 import '../../css/WelcomePage.css';
 import {
@@ -13,7 +13,7 @@ class NavButtons extends React.Component {
           <Router>
           <div className="Area-Button">
               <Link to="/HomePage" className="start">
-                    <Button to="/HomePage" id="start-button" color="primary">
+                    <Button to="/HomePage" id="start-button" variant="primary">
                         Start
                     </Button>
               </Link>

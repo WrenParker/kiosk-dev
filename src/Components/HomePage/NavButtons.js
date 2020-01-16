@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from 'reactstrap';
+import { Button } from 'react-bootstrap';
 import ReactDOM from "react-dom";
 import '../../css/HomePage.css';
 import {
@@ -13,13 +13,13 @@ class NavButtons extends React.Component {
         <Router>
         <div className="Area-Button">
                   <Link to="/MapPage" className="map">
-                    <Button id="map" color="primary">Map</Button>
+                    <Button id="map" variant="primary">Map</Button>
                   </Link>
                   <Link to="/WeatherPage" className="weather">
-                    <Button id="weather" color="primary">Weather</Button>
+                    <Button id="weather" variant="primary">Weather</Button>
                   </Link>
                   <Link to="/SchedulePage" className="schedule">
-                    <Button id="schedule" color="primary">Schedule</Button>
+                    <Button id="schedule" variant="primary">Schedule</Button>
                   </Link>
                </div>
         </Router>

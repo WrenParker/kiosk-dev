@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import '../css/App.css'
 import '../css/MapPage.css'
-import Button from "reactstrap/lib/Button";
+import {Button} from "react-bootstrap";
 import {
   HashRouter as Router,
   Link
