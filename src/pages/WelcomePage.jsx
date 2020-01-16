@@ -23,7 +23,6 @@ class WelcomePage extends React.Component {
                         </div>
                     </div>
                 </div>
-        </Router>
     )}
 }
 
