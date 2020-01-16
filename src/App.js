@@ -14,36 +14,37 @@ import WeatherPage from "./pages/WeatherPage";
 import SchedulePage from "./pages/SchedulePage";
 
 
-
-function App() {
-  return (
-  <Router>
-  <div>
-    <div>
-      <Switch>
-        <Route exact path="/">
-          <Welcome />
-        </Route>
-        <Route path='/HomePage'>
-          <Home />
-        </Route>
-        <Route path='/WelcomePage'>
-          <Welcome />
-        </Route>
-        <Route path='/MapPage'>
-          <Map />
-        </Route>
-        <Route path='/WeatherPage'>
-          <Weather />
-        </Route>
-        <Route path='/SchedulePage'>
-          <Schedule />
-        </Route>
-      </Switch>
-    </div>
-  </div>
-  </Router>
-  );
+class App extends React.Component {
+  render () {
+    return(
+      <div>
+        <Router>
+            <div>
+              <Switch>
+                <Route exact path="/">
+                  <Welcome />
+                </Route>
+                <Route path='/HomePage'>
+                  <Home />
+                </Route>
+                <Route path='/WelcomePage'>
+                  <Welcome />
+                </Route>
+                <Route path='/MapPage'>
+                  <Map />
+                </Route>
+                <Route path='/WeatherPage'>
+                  <Weather />
+                </Route>
+                <Route path='/SchedulePage'>
+                  <Schedule />
+                </Route>
+              </Switch>
+            </div>
+        </Router>
+      </div>
+    )
+  }
 }
 
 function Home() {
