@@ -6,13 +6,11 @@ import {
 } from "react-router-dom";
 import LogoAndText from "../Components/Common/LogoAndText";
 import NavButtons from "../Components/WelcomePage/NavButtons";
-import { Button } from 'reactstrap';
 
 
 class WelcomePage extends React.Component {
     render () {
         return(
-        <Router>
           <div>
             <div className="wrapper">
                         <div className="grid-container">
