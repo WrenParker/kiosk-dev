@@ -6,6 +6,7 @@ import {
   HashRouter as Router,
   Link
 } from "react-router-dom";
+const { ipcRenderer } = require('electron');
 
 class NavButtons extends React.Component {
     render () {
@@ -22,9 +23,5 @@ class NavButtons extends React.Component {
     )}
 }
 
-ReactDOM.render(
-    <NavButtons/>,
-    document.getElementById('root')
-);
 
 export default NavButtons;

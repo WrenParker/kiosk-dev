@@ -4,17 +4,16 @@ const BrowserWindow = electron.BrowserWindow;
 
 const path = require('path');
 const isDev = require('electron-is-dev');
+const { ipcMain } = require('electron')
 
 let mainWindow;
-
-
 
 function createWindow() {
     mainWindow = new BrowserWindow({
         fullscreen: false,
         frame: false,
-        height: 400,
-        width: 300,
+        height: 600,
+        width: 400,
         webPreferences: {
             nodeIntegration: true,
             webviewTag: true
