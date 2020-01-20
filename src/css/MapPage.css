@@ -20,6 +20,7 @@
 
 .QR-Link {
   grid-column: 1;
+  opacity: .60;
 }
 
 .Button-Text {
@@ -28,6 +29,7 @@
 
 .QR-Download {
   grid-column: 3;
+  opacity: .60;
 }
 
 .Download-Buttons-Wrapper {

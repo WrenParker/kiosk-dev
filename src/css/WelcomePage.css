@@ -11,6 +11,7 @@
  #start-button {
   height: 100%;
   width: 100%;
+  opacity: .60;
   color: darkgoldenrod;
   font-style: italic;
   font-size: 4vh;
