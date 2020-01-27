@@ -73,7 +73,7 @@
   object-fit: scale-down;
   left: 0;
   padding: .25em;
-  height: 4vh;
+  height: 5vh;
 }
 
 .App-Logo {
@@ -112,5 +112,5 @@
 
 .Watermark-Image {
   height: auto;
-  width: 17vw;
+  width: 20vw;
 }
