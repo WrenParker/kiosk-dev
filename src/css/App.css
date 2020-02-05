@@ -112,6 +112,6 @@
 
 .Watermark-Image {
   height: auto;
-  width: 20vw;
+  width: 100%;
   justify-content: flex-end;
 }
