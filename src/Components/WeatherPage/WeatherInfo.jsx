@@ -2,12 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import '../../css/HomePage.css';
 import '../../css/WeatherPage.css';
-import {
-  HashRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 import * as apiKeys from "../apiKeys.json"
 
 
@@ -136,7 +130,7 @@ class WeatherInfo extends React.Component {
     }
 
     render () {
-        const {weatherHasLoaded, waterHasLoaded, weatherData} = this.state;
+        const {weatherHasLoaded, waterHasLoaded} = this.state;
          if(weatherHasLoaded && waterHasLoaded) { return (
           <div className="Weather-Info-Wrapper">
             <div className="Outside-Basic-Wrapper">
