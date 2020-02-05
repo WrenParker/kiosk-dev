@@ -21,7 +21,7 @@ class SchedulePage extends React.Component {
                     <div className="grid-container">
                       <div className="Back-Button-Wrapper">
                         <div className="Back-Button">
-                          <Link to="/WelcomePage">
+                          <Link to="/HomePage">
                             <img src={backArrow} className="Arrow-Image" alt="Back"/>
                           </Link>
                         </div>
