@@ -29,6 +29,7 @@ class Clock extends React.Component {
         let hour = this.state.time.getHours();
         let minutes = this.state.time.getMinutes();
         let seconds = this.state.time.getSeconds();
+        let amOrPm = "AM";
 
 
 
@@ -37,12 +38,13 @@ class Clock extends React.Component {
         }
         if(hour > 12) {
             hour = hour-12;
+            amOrPm = "PM";
         }
         if(minutes < 10) {
             minutes = '0' + minutes;
         }
 
-        return hour + ":" + minutes + ":" + seconds;
+        return hour + ":" + minutes + ":" + seconds + " " + amOrPm;
     }
 
     render () {
