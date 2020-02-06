@@ -28,30 +28,36 @@
 
 #map {
     padding: 5px;
-    font-style: italic;
-    font-size: 4vh;
-    opacity: .60;
-    color: darkgoldenrod;
+    font-family: futura;
+    src: url("./futur.ttf");
+    font-size: 3vh;
+    opacity: .70;
+    color: #e9831d;
+    background-color: #0066a6;
     height: 100%;
     width: 100%;
 }
 
 #weather {
     padding: 5px;
-    font-style: italic;
-    font-size: 4vh;
-    opacity: .60;
-    color: darkgoldenrod;
+    font-family: futura;
+    src: url("./futur.ttf");
+    font-size: 3vh;
+    opacity: .70;
+    color: #e9831d;
+    background-color: #0066a6;
     height: 100%;
     width: 100%;
 }
 
 #schedule {
     padding: 5px;
-    font-style: italic;
-    font-size: 4vh;
-    opacity: .60;
-    color: darkgoldenrod;
+    font-family: futura;
+    src: url("./futur.ttf");
+    font-size: 3vh;
+    opacity: .70;
+    color: #e9831d;
+    background-color: #0066a6;
     height: 100%;
     width: 100%;
 }

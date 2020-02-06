@@ -15,7 +15,7 @@
   height: 100vh;
   width: 100vw;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 7fr;
+  grid-template-rows: 3fr 5fr;
   grid-gap: 1em;
 }
 
@@ -31,14 +31,6 @@
     padding: 1em;
     object-fit: cover;
 
-}
-.Logo-Text {
-    grid-row: 3;
-    text-align: center;
-    font-style: italic;
-    color: darkgoldenrod;
-    text-shadow: 2px 2px black;
-    font-size: 36pt;
 }
 
 .NavButton-Wrapper {
@@ -78,10 +70,10 @@
 
 .App-Logo {
   height: auto;
-  width: 100vw;
+  width: 100%;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 1fr 6fr 1fr;
   padding: 5px;
 }
 
@@ -92,10 +84,11 @@
 
 .Logo-Time {
     font-style: italic;
+    font-family: futura;
     text-align: center;
     font-size: 4vh;
     text-shadow: 1px 1px black;
-    color: darkgoldenrod;
+    color: #e9831d;
 }
 
 .Image-Wrapper {

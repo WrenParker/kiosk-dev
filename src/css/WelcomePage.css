@@ -11,8 +11,10 @@
  #start-button {
   height: 100%;
   width: 100%;
-  opacity: .60;
-  color: darkgoldenrod;
-  font-style: italic;
-  font-size: 4vh;
+  opacity: .70;
+  color: #e9831d;
+  font-family: futura;
+  src: url("./futur.ttf");
+  font-size: 3vh;
+  background-color: #0066a6;
  }
