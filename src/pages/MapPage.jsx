@@ -27,24 +27,6 @@ class MapPage extends React.Component {
                       <div className="Logo-Wrapper">
                             <LogoAndText/>
                       </div>
-                      <div className="Map-Wrapper">
-                        <div className="Map-Image-Wrapper">
-                          <img className="Map-Image" src={map} alt="MAP"/>
-                        </div>
-                          <div className="Download-Buttons-Wrapper">
-                            <div className="QR-Link">
-                                <Link to="/QR-Link">
-                                  <Button className="Button-Text">Download via QR-Link <br /> (Internet)</Button>
-                                </Link>
-                            </div>
-                            <div className="QR-Download">
-                                <Link to="/QR-Download">
-                                  <Button className="Button-Text">Download via QR-Download <br /> (No Internet)</Button>
-                                </Link>
-                            </div>
-                          </div>
-                      </div>
-
                     </div>
                 </div>
         </Router>
