@@ -1,3 +1,8 @@
+@@font-face {
+  font-family: futura;
+  src: url("./futur.ttf");
+}
+
 
 .Weather-Wrapper {
   grid-row: 2;
@@ -50,4 +55,3 @@
   text-shadow: 1px 1px black;
   color: #e9831d;
 }
-

@@ -13,8 +13,8 @@
 }
 
 .Calendar-Style {
-  border-width:0;
-  opacity: .80;
+  border:solid 1px #777;
+  opacity: .90;
   height: 100%;
   width: 100%;
 

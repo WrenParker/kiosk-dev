@@ -1,3 +1,8 @@
+@@font-face {
+  font-family: futura;
+  src: url("./futur.ttf");
+}
+
 
 .map {
   grid-row: 2;
@@ -29,7 +34,6 @@
 #map {
     padding: 5px;
     font-family: futura;
-    src: url("./futur.ttf");
     font-size: 3vh;
     opacity: .70;
     color: #e9831d;
@@ -41,7 +45,6 @@
 #weather {
     padding: 5px;
     font-family: futura;
-    src: url("./futur.ttf");
     font-size: 3vh;
     opacity: .70;
     color: #e9831d;
@@ -53,7 +56,6 @@
 #schedule {
     padding: 5px;
     font-family: futura;
-    src: url("./futur.ttf");
     font-size: 3vh;
     opacity: .70;
     color: #e9831d;
