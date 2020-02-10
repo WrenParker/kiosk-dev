@@ -8,7 +8,7 @@ import {
   Link
 } from "react-router-dom";
 import map from '../img/map.jpg'
-import MiniMap from '../Components/MapPage/MyMap'
+import CampusMap from '../Components/MapPage/CampusMap'
 
 import LogoAndText from "../Components/Common/LogoAndText";
 import backArrow from "../img/backArrow.png";
@@ -29,7 +29,7 @@ class MapPage extends React.Component {
                             <LogoAndText/>
                       </div>
                       <div className="Map-Wrapper">
-                        <MiniMap/>
+                        <CampusMap/>
                       </div>
                     </div>
                 </div>

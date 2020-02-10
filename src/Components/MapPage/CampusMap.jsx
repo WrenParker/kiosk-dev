@@ -17,7 +17,7 @@ type State = {
   bounds: Array<[number, number]>,
 }
 
-class MyMap extends Component<{}, State> {
+class CampusMap extends Component<{}, State> {
   state = {
     bounds: outer,
   }
@@ -57,8 +57,8 @@ class MyMap extends Component<{}, State> {
 }
 
 ReactDOM.render(
-    <MyMap />,
+    <CampusMap />,
     document.getElementById('root')
 );
 
-export default MyMap;
+export default CampusMap;
