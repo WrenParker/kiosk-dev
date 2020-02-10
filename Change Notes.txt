@@ -1,0 +1,14 @@
+2/3/2020 - .1: init
+2/10/2020 - .2: changed:
+	-backbutton to go to previous page
+	-font changed to futura
+	-changed weather display so everything is centered
+	-changed clock to be completely centered(changed how HITLAB Watermark is displayed)
+	-added am or pm to clock
+	-removed old map, replaced with leaflet
+	-changed embeded calendar link
+	-refactoring code and minor css changes
+	Known issues:
+	-schedule not working as of release (shows as blank)
+	-font may not work on systems without futura installed
+	-map is not functional, will break if clicked on
