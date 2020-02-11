@@ -24,3 +24,4 @@ yarn-error.log*
 
 /src/Components/apiKeys.json
 /dist/
+/dist.zip
