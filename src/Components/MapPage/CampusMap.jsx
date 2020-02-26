@@ -12,22 +12,25 @@ L.Icon.Default.mergeOptions({
 });
 
 export default class CampusMap extends Component<{}, State> {
-  state = {
-    lat: 38.08721,
-    lng: -81.07914,
-    zoom: 15,
+  constructor(props) {
+    super(props);
+    this.props = props;
+    this.state = {
+      lat: this.props.lat,
+      lng: this.props.long,
+      zoom: 15,
+      message: "",
+    }
   }
 
-
-
-  render() {
-    const pointerIcon = new L.Icon({
-      iconUrl: '../../img/pin.png',
-      iconRetinaUrl: '../../img/pin.png',
-      iconAnchor: [5, 55],
-      popupAnchor: [10, -44],
-      iconSize: [25, 55]
+  componentWillReceiveProps(newProps) {
+    this.props=newProps;
+    this.setState({
+      lat: this.props.lat,
+      lng: this.props.long
     });
+  }
+  render() {
     let bounds = L.latLngBounds(L.latLng(38.0823,-81.0846), L.latLng(38.0945, -81.0724));
     const position = [this.state.lat, this.state.lng]
     return (
@@ -37,7 +40,7 @@ export default class CampusMap extends Component<{}, State> {
         />
       <Marker position={position}>
             <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
+              {this.state.message}
             </Popup>
         </Marker>
       </Map>
