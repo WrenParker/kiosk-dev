@@ -34,7 +34,7 @@ export default class CampusMap extends Component<{}, State> {
     let bounds = L.latLngBounds(L.latLng(38.0823,-81.0846), L.latLng(38.0945, -81.0724));
     const position = [this.state.lat, this.state.lng]
     return (
-      <Map center={position} zoom={this.state.zoom} maxBounds={bounds} maxZoom={17} minZoom={13}>
+      <Map center={position} zoom={this.state.zoom} maxBounds={bounds} maxZoom={17} minZoom={13} attributionControl={false}>
         <TileLayer
           url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
         />
