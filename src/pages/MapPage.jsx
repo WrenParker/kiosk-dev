@@ -28,8 +28,10 @@ class MapPage extends React.Component {
                       <div className="Logo-Wrapper">
                             <LogoAndText/>
                       </div>
-                      <div className="Map-Wrapper">
-                        <CampusMap/>
+                      <div className="Map-Container">
+                        <div className="Map">
+                          <CampusMap />
+                        </div>
                       </div>
                     </div>
                 </div>
