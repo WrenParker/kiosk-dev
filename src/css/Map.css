@@ -25,13 +25,23 @@
   width: 100%;
   height: 100%;
   padding: .5em;
+  font-family: futura;
+  font-size: 2vh;
+  color: #e9831d;
 }
 
-.Direction-Button {
+.Direction-Button-Wrapper {
   display: grid;
   grid-row: 1;
   grid-column: 2;
   width: 100%;
   height: 100%;
   padding: .5em;
+
+}
+
+.Direction-Button {
+  font-family: futura;
+  font-size: 2vh;
+  color: #e9831d;
 }
