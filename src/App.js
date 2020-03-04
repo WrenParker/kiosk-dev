@@ -13,9 +13,18 @@ import MapPage from "./pages/MapPage";
 import WeatherPage from "./pages/WeatherPage";
 import SchedulePage from "./pages/SchedulePage";
 import QRPage from "./pages/QRPage";
+import QRInterface from "./Components/QRPage/QRInterface";
 
 
 class App extends React.Component {
+  state = {
+    data: null
+  }
+  setStateCallBack = (newData) => {
+    this.setState({data:newData})
+  }
+
+
   render () {
     return(
       <div>
@@ -32,7 +41,7 @@ class App extends React.Component {
                   <Welcome />
                 </Route>
                 <Route path='/MapPage'>
-                  <Map />
+                  <MapPage callBack={this.setStateCallBack}/>
                 </Route>
                 <Route path='/WeatherPage'>
                   <Weather />
@@ -41,7 +50,7 @@ class App extends React.Component {
                   <Schedule />
                 </Route>
                 <Route path='/QRPage'>
-                  <QR />
+                  <QRPage parentData={this.state}/>
                 </Route>
               </Switch>
             </div>
@@ -50,10 +59,10 @@ class App extends React.Component {
     )
   }
 }
-function QR() {
+function QR(props) {
   return(
     <div>
-      <QRPage />
+      <QRPage/>
     </div>
   )
 }

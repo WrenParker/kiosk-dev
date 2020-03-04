@@ -8,13 +8,13 @@ import {
   Link
 } from "react-router-dom";
 import map from '../img/map.jpg'
-import CampusMap from '../Components/MapPage/CampusMap'
-
+import CampusMap from '../Components/MapPage/CampusMap';
 import LogoAndText from "../Components/Common/LogoAndText";
 import backArrow from "../img/backArrow.png";
 class MapPage extends React.Component {
     constructor(props) {
       super(props);
+      this.callBack = props.callBack;
       this.setPosition = this.setPosition.bind(this);
       this.state = {
         lat: 50,
@@ -24,6 +24,7 @@ class MapPage extends React.Component {
     }
 
     setPosition(option) {
+      this.callBack(option);
       if(option==="CotG") {
         this.setState({
             lat: 38.08634,
@@ -115,6 +116,10 @@ class MapPage extends React.Component {
             buttonText: "Campsites (C1-C10)"
         });
       }
+
+      if(option!=="Locations") {
+        document.getElementById('directions').className="Show-Button";
+      }
     }
 
     render () {
@@ -157,9 +162,16 @@ class MapPage extends React.Component {
                               </Dropdown.Menu>
                             </Dropdown>
                           </ButtonGroup>
-                        <Link to="/QRPage" className="Direction-Button-Wrapper">
-                          <Button className="Direction-Button" variant="primary">Get Text Directions</Button>
-                        </Link>
+                        <div id="directions" className="Hide-Button">
+                          <Link to={{
+                              pathname: '/QRPage',
+                              state: {
+                                data: "Test"
+                              }
+                            }} className="Direction-Button-Wrapper">
+                            <Button className="Direction-Button" variant="primary">Get Text Directions</Button>
+                          </Link>
+                        </div>
                         <div className="Map">
                           <CampusMap lat={this.state.lat} long={this.state.long} message={message}/>
                         </div>

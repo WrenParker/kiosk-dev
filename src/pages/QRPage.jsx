@@ -14,6 +14,11 @@ import backArrow from "../img/backArrow.png";
 
 
 class QRPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.parentState = props.parentData;
+    console.log(this.parentState)
+  }
     render () {
         return(
         <Router>

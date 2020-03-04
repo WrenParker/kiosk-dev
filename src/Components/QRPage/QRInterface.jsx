@@ -4,13 +4,16 @@ import '../../css/QR.css';
 
 class QRInterface extends React.Component {
   contructor(props) {
-    
+
 
   }
 
   render () {
     return (
       <div className="QR-Container">
+        <div className="QR-Image">
+
+        </div>
       </div>
     )
   }

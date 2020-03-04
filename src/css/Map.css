@@ -44,3 +44,10 @@
   font-size: 2vh;
   color: #e9831d;
 }
+
+.Hide-Button {
+  display: none;
+}
+
+.Show-Button {
+}
