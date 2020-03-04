@@ -157,11 +157,9 @@ class MapPage extends React.Component {
                               </Dropdown.Menu>
                             </Dropdown>
                           </ButtonGroup>
-                        <div className="Direction-Button-Wrapper">
-                            <Button className="Direction-Button">
-                              {"Get Text Directions"}
-                            </Button>
-                        </div>
+                        <Link to="/QRPage" className="Direction-Button-Wrapper">
+                          <Button className="Direction-Button" variant="primary">Get Text Directions</Button>
+                        </Link>
                         <div className="Map">
                           <CampusMap lat={this.state.lat} long={this.state.long} message={message}/>
                         </div>

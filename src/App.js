@@ -12,6 +12,7 @@ import WelcomePage from "./pages/WelcomePage";
 import MapPage from "./pages/MapPage";
 import WeatherPage from "./pages/WeatherPage";
 import SchedulePage from "./pages/SchedulePage";
+import QRPage from "./pages/QRPage";
 
 
 class App extends React.Component {
@@ -39,12 +40,22 @@ class App extends React.Component {
                 <Route path='/SchedulePage'>
                   <Schedule />
                 </Route>
+                <Route path='/QRPage'>
+                  <QR />
+                </Route>
               </Switch>
             </div>
         </Router>
       </div>
     )
   }
+}
+function QR() {
+  return(
+    <div>
+      <QRPage />
+    </div>
+  )
 }
 
 function Home() {

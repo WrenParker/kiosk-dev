@@ -1,0 +1,5 @@
+.QR-Wrapper {
+  display: grid;
+  grid-row: 2;
+  background-color: cyan;
+}
