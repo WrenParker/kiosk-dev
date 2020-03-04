@@ -10,6 +10,7 @@
     "bootstrap": "^4.3.1",
     "electron-is-dev": "^1.1.0",
     "electron-packager": "^14.1.1",
+    "html2canvas": "^1.0.0-rc.5",
     "leaflet": "^1.6.0",
     "node": "latest",
     "qrcode": "^1.4.2",
