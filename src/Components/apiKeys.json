@@ -1,0 +1,14 @@
+{
+  "keys": {
+    "weather": "8ad49bb55f5753905e485cfc386723e2",
+    "calendar": {
+      "clientId" : "553427016972-j2venv59gal7kvu3rd9b3pm3dir6j4m9.apps.googleusercontent.com",
+      "secret": "Tc_jLSRRSyt_2k3y7owQbQbJ",
+      "key": "AIzaSyDKhfA8RdK6rGfiiHGWVLNKsb3qMW3NAk4"
+    },
+    "O-Auth": {
+      "clientId" : "1047805774618-0dqgv2ef09mlh20g73goqfuu4t810loi.apps.googleusercontent.com",
+      "secret" : "OVJb4Wt21Op6dk2QMTHAINS0"
+    }
+  }
+}

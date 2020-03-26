@@ -13,6 +13,7 @@ class QRInterface extends React.Component {
       <div className="QR-Container">
         <div className="QR-Image">
 
+
         </div>
       </div>
     )
