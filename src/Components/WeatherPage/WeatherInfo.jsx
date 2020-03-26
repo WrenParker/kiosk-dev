@@ -39,7 +39,6 @@ class WeatherInfo extends React.Component {
             weatherData: this.getWeatherData(),
             waterData: this.getWaterData(),
         });
-        console.log(this.weatherData);
     }
 
     componentWillUnmount() {

@@ -17,7 +17,6 @@ class QRPage extends React.Component {
   constructor(props) {
     super(props);
     this.parentState = props.parentData;
-    console.log(this.parentState)
   }
     render () {
         return(
@@ -35,7 +34,7 @@ class QRPage extends React.Component {
                     <LogoAndText/>
                 </div>
                 <div className="QR-Wrapper">
-                  <QRInterface />
+                  <QRInterface data={this.parentState}/>
                 </div>
             </div>
           </div>

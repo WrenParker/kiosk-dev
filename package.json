@@ -1,7 +1,7 @@
 {
   "name": "AOTG-Kiosk",
   "author": "Wren P. <wlp0003@mix.wvu.edu>",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "description": "Kiosk Developed by WVU HIT Lab for AOTG, WV",
   "private": true,
   "homepage": "./",
