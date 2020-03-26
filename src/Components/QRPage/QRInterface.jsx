@@ -37,12 +37,6 @@ class QRInterface extends React.Component {
 
   render () {
     return (
-<<<<<<< HEAD
-      <div className="QR-Container">
-        <div className="QR-Image">
-
-
-=======
       <Router>
         <div className="QR-Container">
           <div className="Direct-Download">
@@ -57,7 +51,6 @@ class QRInterface extends React.Component {
           </div>
           <div id="QR-Img" className="QR-Image">
           </div>
->>>>>>> 77e4630e0b394e3a115fdf5ed0f3dbdd63554aab
         </div>
       </Router>
     )
